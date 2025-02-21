@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="60dp"
+    android:paddingHorizontal="40dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     tools:context=".ui.dashboard.DashboardFragment">
+
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/logobrain"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="@dimen/cardview_default_radius"
                 android:scaleType="fitCenter" />
 
             <TextView
@@ -47,7 +49,6 @@
                 android:textAlignment="center"
                 android:text="@string/when"
                 android:textColor="@color/dusty_rose"
-
                 android:layout_marginTop="20dp" />
 
             <TableLayout
@@ -57,7 +58,7 @@
 
                 <TableRow
                     android:layout_height="wrap_content"
-                    android:layout_width="50dp">
+                    android:layout_width="40dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -69,12 +70,13 @@
                         android:id="@+id/monday"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:layout_marginLeft="50dp" />
 
                 </TableRow>
                 <TableRow
                     android:layout_height="wrap_content"
-                    android:layout_width="50dp">
+                    android:layout_width="40dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -86,12 +88,13 @@
                         android:id="@+id/tuesday"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:layout_marginLeft="50dp" />
 
                 </TableRow>
                 <TableRow
                     android:layout_height="wrap_content"
-                    android:layout_width="50dp">
+                    android:layout_width="40dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -103,12 +106,13 @@
                         android:id="@+id/wednesday"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:layout_marginLeft="50dp" />
 
                 </TableRow>
                 <TableRow
                     android:layout_height="wrap_content"
-                    android:layout_width="50dp">
+                    android:layout_width="40dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -120,12 +124,13 @@
                         android:id="@+id/thursday"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:layout_marginLeft="50dp" />
 
                 </TableRow>
                 <TableRow
                     android:layout_height="wrap_content"
-                    android:layout_width="50dp">
+                    android:layout_width="40dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -137,12 +142,13 @@
                         android:id="@+id/friday"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:layout_marginLeft="50dp" />
 
                 </TableRow>
                 <TableRow
                     android:layout_height="wrap_content"
-                    android:layout_width="50dp">
+                    android:layout_width="40dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -154,12 +160,13 @@
                         android:id="@+id/saturday"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:layout_marginLeft="50dp" />
 
                 </TableRow>
                 <TableRow
                     android:layout_height="wrap_content"
-                    android:layout_width="50dp">
+                    android:layout_width="40dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -171,6 +178,7 @@
                         android:id="@+id/sunday"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
                         android:layout_marginLeft="50dp" />
 
                 </TableRow>
@@ -193,20 +201,27 @@
                 android:inputType="text" />
 
             <Button
+                android:id="@+id/btn_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectable"
+                android:text="Set time"
+                android:textAllCaps="false"
+                android:textColor="@color/Gray"
+                android:textSize="16sp" />
+
+            <Button
                 android:id="@+id/done"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/dusty_rose"
-                android:text="@string/done"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-
+                android:backgroundTint="@color/dusty_rose"
+                android:text="@string/done" />
 
 
         </LinearLayout>
 
     </ScrollView>
-
-
 
 </LinearLayout>
